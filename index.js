@@ -138,16 +138,33 @@
 // try looking up the .includes() method
 
 // const countVowels = (word) => {
-// 	const wordCheck = word.toLowerCase().split('');
+// 	const wordCheck = word.toLowerCase();
 // 	let numVowels = 0;
-// 	for (let letter of wordCheck) {
-// 		if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') numVowels++;
-// 	}
+// 	const vowels = [ 'a', 'e', 'i', 'o', 'u' ];
+// 	for (let char of wordCheck) if (vowels.includes(char)) numVowels++;
 // 	return numVowels;
 // };
 
-// console.log(countVowels('ORaNGE'));
+// console.log(countVowels('aaaPLeE'));
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
+// const game = () => {
+// 	const choice = window.prompt();
+// 	const computerPlay = Math.floor(Math.random() * 3); //returns 0,1, or 2. 0==='rock', 1==='paper', 2==='scissors'
+// 	if (choice === 'rock') {
+// 		if (computerPlay === 0) return `Player chose ${choice} and Computer played rock. It's a tie!`;
+// 		else if (computerPlay === 1) return `Player chose ${choice} and Computer played paper. Computer wins!`;
+// 		else return `Player chose ${choice} and Computer played scissors. Player wins!`;
+// 	} else if (choice === 'paper') {
+// 		if (computerPlay === 0) return `Player chose ${choice} and Computer played rock. Player wins!`;
+// 		else if (computerPlay === 1) return `Player chose ${choice} and Computer played paper. It's a tie!`;
+// 		else return `Player chose ${choice} and Computer played scissors. Computer wins!`;
+// 	} else if (choice === 'scissors') {
+// 		if (computerPlay === 0) return `Player chose ${choice} and Computer played rock. Computer wins!`;
+// 		else if (computerPlay === 1) return `Player chose ${choice} and Computer played paper. Player wins!`;
+// 		else return `Player chose ${choice} and Computer played scissors. It's a tie!`;
+// 	}
+// };
+// console.log(game());
